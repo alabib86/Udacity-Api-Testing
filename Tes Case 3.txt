@@ -1,0 +1,11 @@
+ API: PUT /api/v1/Authors/{id}
+ Test Case 1: Author's data is updated successfully
+ Expected Result: Data updates Successfully
+ Actual Result: Data updates Successfully
+ Status: Pass
+ 
+ API: GET /api/v1/Authors/{id}
+ Test case 2: The author's data is changed in GET request.
+ Expected Result: Data are the same as PUT Request
+ Actual Result: Different Data
+ Status: Fail

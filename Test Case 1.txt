@@ -1,0 +1,12 @@
+ 
+ API: POST /api/v1/Authors
+ Test Case 1: response should be 201 Created
+ Expected Result: 201 Created
+ Actual Result: 200 OK
+ Status: Fail
+ 
+ API: POST /api/v1/Authors
+ Test Case 2:  firstname & lastname should be mandatory
+ Expected Result: 400  Bad Request
+ Actual Result: 200 OK
+ Status: Fail

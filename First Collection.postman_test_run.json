@@ -1,0 +1,246 @@
+{
+	"id": "65401331-45f3-48c0-961b-ed735bdfb566",
+	"name": "First Collection",
+	"timestamp": "2022-08-05T12:49:27.017Z",
+	"collection_id": "21209530-94c6a0fa-a9b4-48a4-a7c6-9b30ad77818c",
+	"folder_id": 0,
+	"environment_id": "21209530-b59aea38-aaf0-4b9f-a214-e2f4547b88c6",
+	"totalPass": 12,
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "76a198fb-1bc1-4aee-ac3d-7f087097a080",
+			"name": "Create Board",
+			"url": "https://api.trello.com/1/boards/?name=Test%20Board&key=9463865793d7a38a38baee7bc6ca5fb9&token=3e60a0906d26ddb1b260d702b8aa2903536e67b1e558231d9645823be026f02d",
+			"time": 412,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Permission Level Is Private": true,
+				"Board Can Be Public": true,
+				"Can Invite On Board ": true
+			},
+			"testPassFailCounts": {
+				"Permission Level Is Private": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Board Can Be Public": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Can Invite On Board ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				412
+			],
+			"allTests": [
+				{
+					"Permission Level Is Private": true,
+					"Board Can Be Public": true,
+					"Can Invite On Board ": true
+				}
+			]
+		},
+		{
+			"id": "7f8d4d77-a872-483f-af2b-607f02f1938c",
+			"name": "Boards",
+			"url": "https://api.trello.com/1/members/me?boards=open&key=9463865793d7a38a38baee7bc6ca5fb9&token=3e60a0906d26ddb1b260d702b8aa2903536e67b1e558231d9645823be026f02d",
+			"time": 253,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Number Of Boards More Than One": true
+			},
+			"testPassFailCounts": {
+				"Number Of Boards More Than One": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				253
+			],
+			"allTests": [
+				{
+					"Number Of Boards More Than One": true
+				}
+			]
+		},
+		{
+			"id": "2e74838c-b243-4292-a3f2-ce87dff464d9",
+			"name": "Delete Board",
+			"url": "https://api.trello.com/1/boards/62ec28c29db65800934a3742?key=9463865793d7a38a38baee7bc6ca5fb9&token=3e60a0906d26ddb1b260d702b8aa2903536e67b1e558231d9645823be026f02d",
+			"time": 539,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body Has Meaningful Message": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body Has Meaningful Message": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				539
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body Has Meaningful Message": false
+				}
+			]
+		},
+		{
+			"id": "08a6e53b-46d6-42da-9fd6-00b7ab71ac3b",
+			"name": "Create New List",
+			"url": "https://api.trello.com/1/lists?name=List&idBoard=62ed11d44c532500ee9ccb7b&key=9463865793d7a38a38baee7bc6ca5fb9&token=3e60a0906d26ddb1b260d702b8aa2903536e67b1e558231d9645823be026f02d",
+			"time": 429,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Body have those keys (id,name,idBoard)": true,
+				"Closed is False & limits are empty Object": true
+			},
+			"testPassFailCounts": {
+				"Body have those keys (id,name,idBoard)": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Closed is False & limits are empty Object": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				429
+			],
+			"allTests": [
+				{
+					"Body have those keys (id,name,idBoard)": true,
+					"Closed is False & limits are empty Object": true
+				}
+			]
+		},
+		{
+			"id": "7a641826-262c-4d1f-9487-9f56cdb7ce13",
+			"name": "Lists On Board",
+			"url": "https://api.trello.com/1/boards/62ed11d44c532500ee9ccb7b/lists?key=9463865793d7a38a38baee7bc6ca5fb9&token=3e60a0906d26ddb1b260d702b8aa2903536e67b1e558231d9645823be026f02d",
+			"time": 243,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Default lists (To Do, Doing, Done) are There": true
+			},
+			"testPassFailCounts": {
+				"Default lists (To Do, Doing, Done) are There": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				243
+			],
+			"allTests": [
+				{
+					"Default lists (To Do, Doing, Done) are There": true
+				}
+			]
+		},
+		{
+			"id": "6544864a-7ea3-48ab-8d25-a8fc4a7cd240",
+			"name": "Archive or unarchive a list",
+			"url": "https://api.trello.com/1/lists/62ed11d6cb0a3300704ab449/closed?key=9463865793d7a38a38baee7bc6ca5fb9&token=3e60a0906d26ddb1b260d702b8aa2903536e67b1e558231d9645823be026f02d&value=true",
+			"time": 257,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"List Archived Successfully": true,
+				"Headers include a key called (Set-Cookie) ": true,
+				"Set-Cookie value contains the text (isEnterpriseAdmin%3Dfalse)": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"List Archived Successfully": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Headers include a key called (Set-Cookie) ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Set-Cookie value contains the text (isEnterpriseAdmin%3Dfalse)": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				257
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"List Archived Successfully": true,
+					"Headers include a key called (Set-Cookie) ": true,
+					"Set-Cookie value contains the text (isEnterpriseAdmin%3Dfalse)": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2133,
+	"collection": {
+		"requests": [
+			{
+				"id": "76a198fb-1bc1-4aee-ac3d-7f087097a080",
+				"method": "POST"
+			},
+			{
+				"id": "7f8d4d77-a872-483f-af2b-607f02f1938c",
+				"method": "GET"
+			},
+			{
+				"id": "2e74838c-b243-4292-a3f2-ce87dff464d9",
+				"method": "DELETE"
+			},
+			{
+				"id": "08a6e53b-46d6-42da-9fd6-00b7ab71ac3b",
+				"method": "POST"
+			},
+			{
+				"id": "7a641826-262c-4d1f-9487-9f56cdb7ce13",
+				"method": "GET"
+			},
+			{
+				"id": "6544864a-7ea3-48ab-8d25-a8fc4a7cd240",
+				"method": "PUT"
+			}
+		]
+	}
+}

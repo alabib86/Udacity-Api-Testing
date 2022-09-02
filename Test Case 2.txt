@@ -1,0 +1,6 @@
+
+ API: GET /api/v1/Authors/authors/books/{idBook}
+ Test Case 1: Searching with valid idBook should return relative data in response body
+ Expected Result: ID Book is relative
+ Actual Result: ID Book is relative
+ Status: Pass
